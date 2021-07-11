@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(244, 247, 248, 0.829);
+}
+/* .items{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+*/
+.month-name h1{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(236, 230, 231, 0.719);
+    margin: 20px;
+    padding: 5px;
+    color: rgb(46, 44, 44);
+    text-transform: uppercase;
+    border-top: 2px solid rgb(146, 141, 141);
+    border-bottom: 2px solid rgb(146, 141, 141);
+}
+
+.calendar{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 1em;
+    grid-template-rows: 1fr repeat(5, 1.5fr);
+    margin: 50px;
+    margin-top: 0;
+    border: 2px solid rgba(128, 128, 128, 0.788);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.day , .date{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day{
+    background-color: rgba(191, 240, 237, 0.623);
+}
+
+.date{
+    background-color: lightgray;
+}
+
+.other-month{
+    background-color: rgba(231, 229, 227, 0.781);
+    color: rgb(94, 94, 91);
+}
